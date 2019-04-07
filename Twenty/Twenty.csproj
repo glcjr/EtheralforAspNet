@@ -251,6 +251,7 @@
     <Compile Include="No-Sidebar.Master.designer.cs">
       <DependentUpon>No-Sidebar.Master</DependentUpon>
     </Compile>
+    <Compile Include="PageAddress.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Right-Sidebar.aspx.cs">
       <DependentUpon>Right-Sidebar.aspx</DependentUpon>

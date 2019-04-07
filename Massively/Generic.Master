@@ -51,9 +51,10 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="default.aspx">This is Massively</a></li>
+                            <asp:Literal ID="litLinks" runat="server"></asp:Literal>
+							<%--<li class="active"><a href="default.aspx">This is Massively</a></li>
 							<li><a href="generic.aspx">Generic Page</a></li>
-							<li><a href="elements.aspx">Elements Reference</a></li>
+							<li><a href="elements.aspx">Elements Reference</a></li>--%>
 						</ul>
 						<ul class="icons">
 							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>

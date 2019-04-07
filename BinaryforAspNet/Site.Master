@@ -48,9 +48,10 @@
 		<!-- Nav -->
 			<nav id="menu">
 				<ul class="links">
-					<li><a href="default.aspx">Home</a></li>
+                    <asp:Literal ID="litLinks" runat="server"></asp:Literal>
+					<%--<li><a href="default.aspx">Home</a></li>
 					<li><a href="generic.aspx">Generic</a></li>
-					<li><a href="elements.aspx">Elements</a></li>
+					<li><a href="elements.aspx">Elements</a></li>--%>
 				</ul>
 			</nav>
 

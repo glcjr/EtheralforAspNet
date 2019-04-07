@@ -22,6 +22,15 @@ namespace Dimension {
         protected global::System.Web.UI.WebControls.ContentPlaceHolder TopText;
         
         /// <summary>
+        /// litLinks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litLinks;
+        
+        /// <summary>
         /// FirstPage control.
         /// </summary>
         /// <remarks>
