@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Massively", "Massively\Mass
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dimension", "Dimension\Dimension.csproj", "{ECB77634-6B05-4496-A032-7F42610FCCD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Forty", "Forty\Forty.csproj", "{EADC8100-FA78-454B-B82E-11BEEDC120F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{ECB77634-6B05-4496-A032-7F42610FCCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ECB77634-6B05-4496-A032-7F42610FCCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ECB77634-6B05-4496-A032-7F42610FCCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EADC8100-FA78-454B-B82E-11BEEDC120F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EADC8100-FA78-454B-B82E-11BEEDC120F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EADC8100-FA78-454B-B82E-11BEEDC120F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EADC8100-FA78-454B-B82E-11BEEDC120F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
