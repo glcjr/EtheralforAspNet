@@ -1,0 +1,294 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Twenty.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="index is-preload">
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div id="page-wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<h1 id="logo"><a href="default.aspx">Twenty <span>by HTML5 UP</span></a></h1>
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="default.aspx">Welcome</a></li>
+							<li class="submenu">
+								<a href="#">Layouts</a>
+								<ul>
+									<li><a href="left-sidebar.aspx">Left Sidebar</a></li>
+									<li><a href="right-sidebar.aspx">Right Sidebar</a></li>
+									<li><a href="no-sidebar.aspx">No Sidebar</a></li>
+									<li><a href="contact.aspx">Contact</a></li>
+									<li class="submenu">
+										<a href="#">Submenu</a>
+										<ul>
+											<li><a href="#">Dolore Sed</a></li>
+											<li><a href="#">Consequat</a></li>
+											<li><a href="#">Lorem Magna</a></li>
+											<li><a href="#">Sed Magna</a></li>
+											<li><a href="#">Ipsum Nisl</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="button primary">Sign Up</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Banner -->
+				<section id="banner">
+
+					<!--
+						".inner" is set up as an inline-block so it automatically expands
+						in both directions to fit whatever's inside it. This means it won't
+						automatically wrap lines, so be sure to use line breaks where
+						appropriate (<br />).
+					-->
+					<div class="inner">
+                        <asp:ContentPlaceHolder ID="TopMessage" runat="server">
+            </asp:ContentPlaceHolder>   
+						
+
+					</div>
+
+				</section>
+
+			<!-- Main -->
+				<article id="main">
+
+					<header class="special container">
+						<span class="icon fa-bar-chart-o"></span>
+                        <asp:ContentPlaceHolder ID="MainSection" runat="server">
+            </asp:ContentPlaceHolder> 
+						
+					</header>
+
+					<!-- One -->
+						<section class="wrapper style2 container special-alt">
+							<div class="row gtr-50">
+								<div class="col-8 col-12-narrower">
+                                    <asp:ContentPlaceHolder ID="OneMainSection" runat="server">
+            </asp:ContentPlaceHolder> 
+									
+
+								</div>
+								<div class="col-4 col-12-narrower imp-narrower">
+<asp:ContentPlaceHolder ID="FeaturedIcons" runat="server">									
+
+</asp:ContentPlaceHolder> 
+
+								</div>
+							</div>
+						</section>
+
+					<!-- Two -->
+						<section class="wrapper style1 container special">
+							<div class="row">
+                                <asp:ContentPlaceHolder ID="SectionTwo" runat="server">
+                                        </asp:ContentPlaceHolder>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon featured fa-check"></span>
+                                        <asp:ContentPlaceHolder ID="SubSection1" runat="server">
+                                        </asp:ContentPlaceHolder> 
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon featured fa-check"></span>
+                                        <asp:ContentPlaceHolder ID="SubSection2" runat="server">
+                                        </asp:ContentPlaceHolder> 
+										
+									</section>
+
+								</div>
+								<div class="col-4 col-12-narrower">
+
+									<section>
+										<span class="icon featured fa-check"></span>
+                                        <asp:ContentPlaceHolder ID="SubSection3" runat="server">
+                                        </asp:ContentPlaceHolder> 
+										
+									</section>
+
+								</div>
+							</div>
+						</section>
+
+					<!-- Three -->
+						<section class="wrapper style3 container special">
+                            <asp:ContentPlaceHolder ID="Section3MainMessage" runat="server">
+                              <header class="major">
+								<h2>Next look at this <strong>cool stuff</strong></h2>
+							</header>          
+
+                            </asp:ContentPlaceHolder> 
+							
+
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+                                        <asp:ContentPlaceHolder ID="Section3Box1Image" runat="server">
+                                        
+
+                                        </asp:ContentPlaceHolder> 
+										
+                                        <asp:ContentPlaceHolder ID="Section3Box1" runat="server">
+                                       
+
+                                        </asp:ContentPlaceHolder> 
+										
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+                                        <asp:ContentPlaceHolder ID="Section3Box2Image" runat="server">
+                                        
+
+                                        </asp:ContentPlaceHolder> 
+										
+                                        <asp:ContentPlaceHolder ID="Section3Box2" runat="server">
+                                        
+
+                                        </asp:ContentPlaceHolder> 
+										
+									</section>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-6 col-12-narrower">
+
+									<section>
+                                        <asp:ContentPlaceHolder ID="Section3Box3Image" runat="server">
+                                           
+                                        </asp:ContentPlaceHolder> 
+										
+                                        <asp:ContentPlaceHolder ID="Section3Box3" runat="server">
+                                        
+
+                                        </asp:ContentPlaceHolder> 
+										
+									</section>
+
+								</div>
+								<div class="col-6 col-12-narrower">
+
+									<section>
+                                        <asp:ContentPlaceHolder ID="Section3Box4Image" runat="server">
+                                        
+
+                                        </asp:ContentPlaceHolder> 
+                                        <asp:ContentPlaceHolder ID="Section3Box4" runat="server">
+                                        
+
+                                        </asp:ContentPlaceHolder> 
+										
+										
+									</section>
+
+								</div>
+							</div>
+                            <footer class="major">
+                            <asp:ContentPlaceHolder ID="MajorFooter" runat="server">
+                                     <ul class="buttons">
+									<li><a href="#" class="button">See More</a></li>
+								</ul>   
+
+                            </asp:ContentPlaceHolder> 
+							
+								
+							</footer>
+
+						</section>
+
+				</article>
+
+			<!-- CTA -->
+				<section id="cta">
+                    <asp:ContentPlaceHolder ID="DoSomething" runat="server">
+                                      
+
+                    </asp:ContentPlaceHolder> 
+					
+
+				</section>
+
+			<!-- Footer -->
+            <hr />
+				<footer id="footer">
+
+					<ul class="icons">
+						<li><a href="#" class="icon circle fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon circle fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon circle fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon circle fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon circle fa-dribbble"><span class="label">Dribbble</span></a></li>
+					</ul>
+
+					<ul class="copyright">
+						<li>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+        
+
+    </form>
+</body>
+</html>

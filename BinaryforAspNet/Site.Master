@@ -1,0 +1,201 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="BinaryforAspNet.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />    
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+     <header id="header">
+				<a href="default.aspx" class="logo"><strong>Binary</strong> by TEMPLATED</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="default.aspx">Home</a></li>
+					<li><a href="generic.aspx">Generic</a></li>
+					<li><a href="elements.aspx">Elements</a></li>
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<asp:ContentPlaceHolder ID="TopBox" runat="server">
+            </asp:ContentPlaceHolder>
+				</div>
+			</section>
+
+		<!-- One -->
+			<article id="one" class="post style1">
+				<div class="image">
+                    <asp:ContentPlaceHolder ID="ImageRow1" runat="server">
+            </asp:ContentPlaceHolder>
+					
+				</div>
+				<div class="content">
+					<div class="inner">
+						<asp:ContentPlaceHolder ID="Row1Left" runat="server">
+            </asp:ContentPlaceHolder>
+					</div>
+					<div class="postnav">
+						<a href="#" class="prev disabled"><span class="icon fa-chevron-up"></span></a>
+						<a href="#two" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+					</div>
+				</div>
+			</article>
+
+		<!-- Two -->
+			<article id="two" class="post invert style1 alt">
+				<div class="image">
+					<asp:ContentPlaceHolder ID="ImageRow2" runat="server">
+            </asp:ContentPlaceHolder>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<asp:ContentPlaceHolder ID="Row2Right" runat="server">
+            </asp:ContentPlaceHolder>
+					</div>
+					<div class="postnav">
+						<a href="#one" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+						<a href="#three" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+					</div>
+				</div>
+			</article>
+
+		<!-- Three -->
+			<article id="three" class="post style2">
+				<div class="image">
+					<asp:ContentPlaceHolder ID="ImageRow3" runat="server">
+            </asp:ContentPlaceHolder>
+				</div>
+				<div class="content">
+					<div class="inner">
+						 <asp:ContentPlaceHolder ID="Row3Left" runat="server">
+            </asp:ContentPlaceHolder>
+					</div>
+					<div class="postnav">
+						<a href="#two" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+						<a href="#four" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+					</div>
+				</div>
+			</article>
+
+		<!-- Four -->
+			<article id="four" class="post invert style2 alt">
+				<div class="image">
+					<asp:ContentPlaceHolder ID="ImageRow4" runat="server">
+            </asp:ContentPlaceHolder>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<asp:ContentPlaceHolder ID="Row4Right" runat="server">
+            </asp:ContentPlaceHolder>
+					</div>
+					<div class="postnav">
+						<a href="#three" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+						<a href="#five" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+					</div>
+				</div>
+			</article>
+
+		<!-- Five -->
+			<article id="five" class="post style3">
+				<div class="image">
+					<asp:ContentPlaceHolder ID="ImageRow5" runat="server">
+    
+</asp:ContentPlaceHolder>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<asp:ContentPlaceHolder ID="Row5Left" runat="server">
+   
+</asp:ContentPlaceHolder>
+					</div>
+					<div class="postnav">
+						<a href="#four" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+						<a href="#six" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+					</div>
+				</div>
+			</article>
+
+		<!-- Six -->
+			<article id="six" class="post invert style3 alt">
+				<div class="image">
+					<asp:ContentPlaceHolder ID="ImageRow6" runat="server">
+    
+</asp:ContentPlaceHolder>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<asp:ContentPlaceHolder ID="Row6Left" runat="server">
+   
+</asp:ContentPlaceHolder>
+					</div>
+					<div class="postnav">
+						<a href="#five" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+						<a href="#" class="scrolly next disabled"><span class="icon fa-chevron-down"></span></a>
+					</div>
+				</div>
+			</article>
+
+		
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+        <div class="container body-content">
+            
+            <hr />
+            <footer id="footer">
+                <ul class="icons">
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				</ul>
+                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>
