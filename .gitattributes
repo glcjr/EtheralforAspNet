@@ -66,5 +66,6 @@
 *.js linguist-detectable=false
 *.html linguist-detectable=false
 *.xml linguist-detectable=false
-*/Content/*.* linguist-detectable=false
+*.css linguist-detectable=false
+*/Content/*.css linguist-detectable=false
 
